@@ -3,6 +3,8 @@ import pickle
 import pandas as pd
 from PIL import Image
 from flask import Flask, request
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similitary, linear_kernel
 
 app = Flask(__name__)
 

@@ -1,6 +1,9 @@
+import streamlit as st
 import pickle
 import pandas as pd
+from PIL import Image
 from flask import Flask, request
+
 app = Flask(__name__)
 
 with open("model/model_numpy.pkl", "rb") as model_file:
